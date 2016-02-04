@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+    <key id="extent" for="node" attr.name="extent" attr.type="string"/>
+    <key id="intent" for="node" attr.name="intent" attr.type="string"/>
+    <graph id="G" edgedefault="directed">
+        <node id="0">
+            <data key="extent">bb, aaa, bab, aab, baa, abbb, aabb, abba, baab, bbaa, bbab, epsilon, baba, babb, bbba,
+                aa, abb, bba, a, ab, aba, b, bbb, aaab, abaa, aaaa, bbbb, abab, baaa, aaba, ba
+            </data>
+            <data key="intent">epsilon</data>
+        </node>
+        <node id="8">
+            <data key="extent">aaa, aab, abbb, aabb, abba, aa, abb, ab, aba, aaab, abaa, aaaa, abab, aaba</data>
+            <data key="intent">a, epsilon</data>
+        </node>
+        <node id="1">
+            <data key="extent">bb, bab, baa, baab, bbaa, bbab, baba, babb, bbba, bba, bbb, bbbb, baaa, ba</data>
+            <data key="intent">b, epsilon</data>
+        </node>
+        <node id="12">
+            <data key="extent">aaa, aabb, aaab, aaaa, aaba</data>
+            <data key="intent">a, aa, epsilon</data>
+        </node>
+        <node id="2">
+            <data key="extent">bbaa, bbab, bbba, bba, bbb, bbbb</data>
+            <data key="intent">b, bb, epsilon</data>
+        </node>
+        <node id="5">
+            <data key="extent">bab, baa, baab, baba, babb, baaa</data>
+            <data key="intent">b, ba, epsilon</data>
+        </node>
+        <node id="9">
+            <data key="extent">abbb, abba, abb, aba, abaa, abab</data>
+            <data key="intent">a, ab, epsilon</data>
+        </node>
+        <node id="4">
+            <data key="extent">bbaa, bbab</data>
+            <data key="intent">b, bb, bba, epsilon</data>
+        </node>
+        <node id="6">
+            <data key="extent">baba, babb</data>
+            <data key="intent">b, ba, bab, epsilon</data>
+        </node>
+        <node id="13">
+            <data key="extent">aabb, aaba</data>
+            <data key="intent">a, aa, aab, epsilon</data>
+        </node>
+        <node id="10">
+            <data key="extent">abbb, abba</data>
+            <data key="intent">a, ab, abb, epsilon</data>
+        </node>
+        <node id="14">
+            <data key="extent">aaab, aaaa</data>
+            <data key="intent">a, aa, aaa, epsilon</data>
+        </node>
+        <node id="3">
+            <data key="extent">bbba, bbbb</data>
+            <data key="intent">b, bb, bbb, epsilon</data>
+        </node>
+        <node id="7">
+            <data key="extent">baab, baaa</data>
+            <data key="intent">b, ba, baa, epsilon</data>
+        </node>
+        <node id="11">
+            <data key="extent">abaa, abab</data>
+            <data key="intent">a, ab, aba, epsilon</data>
+        </node>
+        <node id="15">
+            <data key="extent"></data>
+            <data key="intent">a, aa, aaa, aab, ab, aba, abb, b, ba, baa, bab, bb, bba, bbb, epsilon</data>
+        </node>
+        <edge source="8" target="0"/>
+        <edge source="1" target="0"/>
+        <edge source="12" target="8"/>
+        <edge source="2" target="1"/>
+        <edge source="5" target="1"/>
+        <edge source="9" target="8"/>
+        <edge source="4" target="2"/>
+        <edge source="6" target="5"/>
+        <edge source="13" target="12"/>
+        <edge source="10" target="9"/>
+        <edge source="14" target="12"/>
+        <edge source="3" target="2"/>
+        <edge source="7" target="5"/>
+        <edge source="11" target="9"/>
+        <edge source="15" target="4"/>
+        <edge source="15" target="6"/>
+        <edge source="15" target="13"/>
+        <edge source="15" target="10"/>
+        <edge source="15" target="14"/>
+        <edge source="15" target="3"/>
+        <edge source="15" target="7"/>
+        <edge source="15" target="11"/>
+    </graph>
+</graphml>

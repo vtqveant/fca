@@ -67,4 +67,15 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>eventflow-nexus</id>
+            <url>http://nexus.eventflow.ru/repository/maven-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>eventflow-nexus</id>
+            <url>http://nexus.eventflow.ru/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
+
 </project>

@@ -17,7 +17,7 @@
     </properties>
 
     <dependencies>
-       <dependency>
+        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-csv</artifactId>
             <version>1.2</version>
@@ -69,12 +69,12 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>eventflow-nexus</id>
-            <url>http://nexus.eventflow.ru/repository/maven-snapshots/</url>
+            <id>crplab-artifactory</id>
+            <url>https://services.crplab.ru/artifactory/nlu</url>
         </snapshotRepository>
         <repository>
-            <id>eventflow-nexus</id>
-            <url>http://nexus.eventflow.ru/repository/maven-releases/</url>
+            <id>crplab-artifactory</id>
+            <url>https://services.crplab.ru/artifactory/nlu</url>
         </repository>
     </distributionManagement>
 

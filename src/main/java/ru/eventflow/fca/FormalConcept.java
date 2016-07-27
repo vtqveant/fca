@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-class FormalConcept<O, A> {
+public class FormalConcept<O, A> {
 
     public static long ID;
     private long id = ID++;

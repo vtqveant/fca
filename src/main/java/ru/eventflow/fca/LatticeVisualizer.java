@@ -2,6 +2,7 @@ package ru.eventflow.fca;
 
 import edu.uci.ics.jung.algorithms.layout.DAGLayout;
 import edu.uci.ics.jung.algorithms.layout.Layout;
+import edu.uci.ics.jung.algorithms.layout.StaticLayout;
 import edu.uci.ics.jung.graph.DirectedGraph;
 import edu.uci.ics.jung.visualization.DefaultVisualizationModel;
 import edu.uci.ics.jung.visualization.GraphZoomScrollPane;
@@ -30,6 +31,7 @@ public class LatticeVisualizer {
             DirectedGraph<Node, Edge> graph = GraphReader.buildGraph(is);
 
             Layout<Node, Edge> layout = new DAGLayout<>(graph);
+//            Layout<Node, Edge> layout = new StaticLayout<>(graph);
             Dimension preferredSize = new Dimension(800, 600);
             final VisualizationModel<Node, Edge> visualizationModel = new DefaultVisualizationModel<>(layout, preferredSize);
             VisualizationViewer<Node, Edge> vv = new VisualizationViewer<>(visualizationModel, preferredSize);

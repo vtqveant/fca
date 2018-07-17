@@ -8,76 +8,67 @@
             <data key="extent">top</data>
             <data key="intent"></data>
         </node>
+        <node id="10">
+            <data key="extent">dummy_10</data>
+            <data key="intent">машинам</data>
+        </node>
         <node id="9">
             <data key="extent">dummy_9</data>
-            <data key="intent">house</data>
-        </node>
-        <node id="4">
-            <data key="extent">dummy_4</data>
-            <data key="intent">cat</data>
-        </node>
-        <node id="7">
-            <data key="extent">dummy_7</data>
-            <data key="intent">bird</data>
+            <data key="intent">дому</data>
         </node>
         <node id="5">
             <data key="extent">dummy_5</data>
-            <data key="intent">bird, cat</data>
+            <data key="intent">большому</data>
         </node>
-        <node id="8">
-            <data key="extent">dummy_8</data>
-            <data key="intent">bird, house</data>
-        </node>
-        <node id="6">
-            <data key="extent">dummy_6</data>
-            <data key="intent">cat, house</data>
-        </node>
-        <node id="0">
-            <data key="extent">dummy_0</data>
-            <data key="intent">dog, mouse</data>
-        </node>
-        <node id="2">
-            <data key="extent">dummy_2</data>
-            <data key="intent">bird, dog, mouse</data>
+        <node id="7">
+            <data key="extent">dummy_7</data>
+            <data key="intent">большому, дому, машинам</data>
         </node>
         <node id="3">
             <data key="extent">dummy_3</data>
-            <data key="intent">dog, house, mouse</data>
+            <data key="intent">большого, большой, большому</data>
+        </node>
+        <node id="0">
+            <data key="extent">dummy_0</data>
+            <data key="intent">дом, дома, дому</data>
+        </node>
+        <node id="8">
+            <data key="extent">dummy_8</data>
+            <data key="intent">машин, машинам, машины</data>
+        </node>
+        <node id="2">
+            <data key="extent">dummy_2</data>
+            <data key="intent">большому, дом, дома, дому, машинам</data>
+        </node>
+        <node id="6">
+            <data key="extent">dummy_6</data>
+            <data key="intent">большому, дому, машин, машинам, машины</data>
+        </node>
+        <node id="4">
+            <data key="extent">dummy_4</data>
+            <data key="intent">большого, большой, большому, дому, машинам</data>
         </node>
         <node id="1">
             <data key="extent">dummy_1</data>
-            <data key="intent">car, cat, dog, mouse</data>
+            <data key="intent">большого, большой, большому, дом, дома, дому, машин, машинам, машины</data>
         </node>
-        <node id="10">
-            <data key="extent">dummy_10</data>
-            <data key="intent">car, cat, dog, house, mouse</data>
-        </node>
-        <node id="12">
-            <data key="extent">bottom</data>
-            <data key="intent">bird, car, cat, dog, house, mouse</data>
-        </node>
+        <edge source="10" target="11"/>
         <edge source="9" target="11"/>
-        <edge source="4" target="11"/>
-        <edge source="7" target="11"/>
-        <edge source="5" target="4"/>
-        <edge source="5" target="7"/>
-        <edge source="8" target="9"/>
-        <edge source="8" target="7"/>
-        <edge source="6" target="9"/>
-        <edge source="6" target="4"/>
-        <edge source="0" target="11"/>
+        <edge source="5" target="11"/>
+        <edge source="7" target="10"/>
+        <edge source="7" target="9"/>
+        <edge source="7" target="5"/>
+        <edge source="3" target="5"/>
+        <edge source="0" target="9"/>
+        <edge source="8" target="10"/>
         <edge source="2" target="7"/>
         <edge source="2" target="0"/>
-        <edge source="3" target="9"/>
-        <edge source="3" target="0"/>
+        <edge source="6" target="7"/>
+        <edge source="6" target="8"/>
+        <edge source="4" target="7"/>
+        <edge source="4" target="3"/>
+        <edge source="1" target="2"/>
+        <edge source="1" target="6"/>
         <edge source="1" target="4"/>
-        <edge source="1" target="0"/>
-        <edge source="10" target="1"/>
-        <edge source="10" target="3"/>
-        <edge source="10" target="6"/>
-        <edge source="12" target="5"/>
-        <edge source="12" target="10"/>
-        <edge source="12" target="2"/>
-        <edge source="12" target="8"/>
     </graph>
 </graphml>

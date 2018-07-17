@@ -20,7 +20,8 @@ import java.io.InputStream;
 
 public class LatticeVisualizer {
 
-    private static final String XML = "/prefixes.graphml";
+//    private static final String XML = "/prefixes.graphml";
+    private static final String XML = "/grassmanian.graphml";
 
     public static void main(String[] args) {
 

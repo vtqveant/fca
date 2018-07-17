@@ -11,9 +11,13 @@ public class DiagramBuilder<O, A extends Comparable<A>> {
     private int maxIntentSize;
     private Map<Intent, FormalConcept<O, A>> generators = new HashMap<>();
 
-    public DiagramBuilder(FCA<O, A> fca) {
-        this.maxIntentSize = fca.getContext().getAttributes().size();
-        this.concepts = sort(fca.getConcepts());
+    public DiagramBuilder(List<FormalConcept<O, A>> concepts) {
+        maxIntentSize = 0;
+        for (FormalConcept<O, A> concept : concepts) {
+            maxIntentSize = Math.max(maxIntentSize, concept.getIntent().size());
+        }
+
+        this.concepts = sort(concepts);
     }
 
     public List<FormalConcept<O, A>> buildHasseDiagram() {

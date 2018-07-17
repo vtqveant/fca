@@ -11,7 +11,8 @@ import java.util.List;
 
 public class Runner {
 
-    public static final String FILENAME = "/prefixes.csv";
+//    public static final String FILENAME = "/prefixes.csv";
+    public static final String FILENAME = "/reachability.csv";
 
     public Runner() {
     }
@@ -41,7 +42,8 @@ public class Runner {
         }
 
         FCA<String, String> fca = new FCA<>(ctx);
-        DiagramBuilder<String, String> diagramBuilder = new DiagramBuilder<>(fca);
+        List<FormalConcept<String, String>> concepts = fca.getConcepts();
+        DiagramBuilder<String, String> diagramBuilder = new DiagramBuilder<>(concepts);
         List<FormalConcept<String, String>> lattice = diagramBuilder.buildHasseDiagram();
 
         System.out.format("%d objects\n", list.size() - 1);

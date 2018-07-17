@@ -23,7 +23,7 @@ public class LatticeTest {
         context.put(5, Arrays.asList("b", "e", "g"));
         fca = new FCA<>(context);
 
-        diagramBuilder = new DiagramBuilder<>(fca);
+        diagramBuilder = new DiagramBuilder<>(fca.getConcepts());
     }
 
     @Test
@@ -37,7 +37,7 @@ public class LatticeTest {
 
     @Test
     public void testDiagramBuilder() {
-        DiagramBuilder<Integer, String> diagramBuilder = new DiagramBuilder<>(fca);
+        DiagramBuilder<Integer, String> diagramBuilder = new DiagramBuilder<>(fca.getConcepts());
         List<FormalConcept<Integer, String>> lattice = diagramBuilder.buildHasseDiagram();
 
         String xml = GraphMLWriter.serialize(lattice);
@@ -66,7 +66,7 @@ public class LatticeTest {
         ctx.put("maize", Arrays.asList(a, c, d, f));
 
         FCA<String, String> fca = new FCA<>(ctx);
-        DiagramBuilder<String, String> diagramBuilder = new DiagramBuilder<>(fca);
+        DiagramBuilder<String, String> diagramBuilder = new DiagramBuilder<>(fca.getConcepts());
         List<FormalConcept<String, String>> lattice = diagramBuilder.buildHasseDiagram();
 
         String xml = GraphMLWriter.serialize(lattice);
